@@ -60,6 +60,6 @@ public abstract class ConcretePiece implements Piece {
     public abstract String toString();
 
     public void deleteLastStep() {
-        this.positionsHistory.removeLast();
+        this.positionsHistory.remove(positionsHistory.size()-1);
     }
 }
